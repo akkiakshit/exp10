@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* AUTH PAGE */
+.auth-container {
+  background: #111;
+  border: 1px solid #ff6600;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255,102,0,0.3);
+}
+
+.auth-logo {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+h1 span {
+  color: #ff6600;
+}
+
+.auth-tabs {
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ff6600;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  color: #ff6600;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  background: #ff6600;
+  color: #000;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #ff6600;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  background: #ff6600;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #ff8800;
+}
+
+.error {
+  color: #ff4444;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* WELCOME PAGE */
+.welcome-page {
+  background: #0a0a0a;
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.welcome-emoji {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.welcome-container h1 {
+  font-size: 28px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.welcome-container h2 {
+  font-size: 42px;
+  color: #ff6600;
+  margin-bottom: 16px;
+}
+
+.welcome-container p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.logout-btn {
+  background: transparent;
+  color: #666;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  width: 100%;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  border-color: #ff6600;
+  color: #ff6600;
+}
+
+/* TODO PAGE */
+.todo-page {
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.todo-header h1 {
+  font-size: 26px;
+  color: #ff6600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-right span {
+  color: #666;
+  font-size: 14px;
+}
+
+.header-right .logout-btn {
+  width: auto;
+  margin: 0;
+  padding: 8px 14px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input-area input {
+  margin: 0;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  background: #ff6600;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.add-btn:hover {
+  background: #ff8800;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  transition: border 0.3s;
+}
+
+li:hover {
+  border-color: #ff6600;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #444;
+}
+
+li span {
+  font-size: 15px;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.done-btn {
+  background: #1a1a1a;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.done-btn:hover {
+  background: #ff6600;
+  color: #000;
+}
+
+.del-btn {
+  background: #1a1a1a;
+  color: #ff4444;
+  border: 1px solid #ff4444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.del-btn:hover {
+  background: #ff4444;
+  color: #000;
+}

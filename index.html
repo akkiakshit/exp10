@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App — Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="auth-page">
+  <div class="auth-container">
+    <div class="auth-logo">📝</div>
+    <h1>Todo<span>App</span></h1>
+
+    <div class="auth-tabs">
+      <button class="tab-btn active" onclick="showTab('login')">Login</button>
+      <button class="tab-btn" onclick="showTab('signup')">Sign Up</button>
+    </div>
+
+    <div id="login-form">
+      <input type="text" id="login-username" placeholder="Username"/>
+      <input type="password" id="login-password" placeholder="Password"/>
+      <button class="submit-btn" onclick="login()">Login 🔥</button>
+      <p id="login-error" class="error"></p>
+    </div>
+
+    <div id="signup-form" style="display:none">
+      <input type="text" id="signup-username" placeholder="Choose a username"/>
+      <input type="password" id="signup-password" placeholder="Choose a password"/>
+      <button class="submit-btn" onclick="signup()">Create Account 🚀</button>
+      <p id="signup-error" class="error"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

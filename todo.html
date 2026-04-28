@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Todos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="todo-page">
+  <div class="todo-container">
+    <div class="todo-header">
+      <h1>📝 My Todos</h1>
+      <div class="header-right">
+        <span id="todo-username"></span>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="todoInput" placeholder="Add a new todo..."/>
+      <button class="add-btn" onclick="addTodo()">+ Add</button>
+    </div>
+
+    <div class="stats">
+      <span id="total-count">0 todos</span>
+      <span id="done-count">0 done</span>
+    </div>
+
+    <ul id="todoList"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
